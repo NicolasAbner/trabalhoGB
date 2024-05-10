@@ -1,0 +1,109 @@
+body{
+    background-color: #b6b4a7;
+}
+
+.cabecalho{
+    display: block;
+}
+
+.topbar{
+    background-color: #72755a;
+    width: auto;
+    height: 80px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid black;
+    border-color: black;
+    border-radius: 25px;
+
+}
+
+.logo{
+    background-color: #b6b4a7;
+    width: 20%;
+    height: 70px;
+    background-image: url("../images/obraLogo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    margin-left: 10px;
+
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    justify-content: center;
+}
+
+li{
+    display: inline-flex;
+}
+
+li a, .titulo-smenu{
+    display: inline-block;
+    color: #d9d7c7;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .submenu:hover .titulo-smenu{
+    height: 100%;
+    background-color: darkred;
+    color: white;
+}
+
+li.submenu{
+    display: inline-block;
+}
+
+.lista-itens{
+    display: none;
+    position: absolute;
+    background-color: lightcoral;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px darkgray;
+}
+
+.lista-itens a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.lista-itens a:hover{
+    background-color: darkred;
+    color: white;
+}
+
+.submenu:hover .lista-itens{
+    display: block;
+}
+
+
+/* .menu-cabecalho{
+    background-color: blueviolet;
+    width: 800px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: row !important;
+
+}
+
+.menu{
+    background-color: aqua;
+    width: 20%;
+    height: 50px;
+    margin-bottom: 5px;
+} */
