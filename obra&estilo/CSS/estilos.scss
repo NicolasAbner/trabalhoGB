@@ -1,0 +1,204 @@
+@import "mixin/parallax.scss";
+$maincolor: #bcb8af;
+$fontcolor: #78260d; 
+
+body{
+    background-color: #eae8dc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.cabecalho{
+    background-color: lightgray;
+    border: 0;
+}
+
+.topbar{
+    background-color: $maincolor;
+    width: auto;
+    height: 80px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid black;
+    border-color: black;
+    border-radius: 25px;
+
+}
+
+.logo{
+    width: 20%;
+    height: 70px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-image: url("../images/obraLogo.png");
+    margin-left: 10px;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    justify-content: center;
+}
+
+li{
+    display: inline-flex;
+}
+
+li a, .titulo-smenu{
+    display: inline-block;
+    color: $fontcolor;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .submenu:hover .titulo-smenu{
+    height: 100%;
+    background-color: darkred;
+    color: white;
+}
+
+li.submenu{
+    display: inline-block;
+}
+
+.lista-itens{
+    display: none;
+    position: absolute;
+    background-color: lightcoral;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px darkgray;
+}
+
+.lista-itens a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.lista-itens a:hover{
+    background-color: darkred;
+    color: white;
+}
+
+.submenu:hover .lista-itens{
+    display: block;
+}
+
+.middle{
+    display: block;
+}
+
+.apresentacao{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 20px;
+    padding: 10px;
+    margin: auto;
+    @include parallax("../images/freeHouse.jpg", red, 200px);
+
+
+}
+
+.coluna1{
+    align-self: right;
+    background-color: darken($maincolor, 10%);
+    opacity: 70%;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coluna1 h1{
+    color: black;
+    opacity: none;
+    align-items: center;    
+}
+
+.coluna1 h3{
+    align-self: center;
+    justify-self: center;
+    color: black;
+}
+
+.coluna1 h6{
+    align-self: center;
+    justify-self: center;
+    color: black;
+}
+
+.historia{
+    width: 100%;
+    height: 870px;
+
+}
+
+.colunaHistoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.historia-conteudo1{
+    width: auto;
+    height: 250px;
+    background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+}
+
+.historia-logo1{
+    align-self: center;
+    max-width: 20%;
+    height: 225px;
+    margin: 10px;
+    align-items: center;
+    background-image: url("../images/lamp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.historia1{
+    width: 500px;
+    height: 200px;
+    background-color: pink;
+}
+
+.historia-conteudo2{
+    width: auto;
+    height: 250px;
+    background-color: brown;
+}
+
+.historia-conteudo3{
+    width: auto;
+    height: 250px;
+    background-color: red;
+
+}
+
+.rodape{
+    background-color: grey;
+    color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

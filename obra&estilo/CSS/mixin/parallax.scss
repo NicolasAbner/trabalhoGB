@@ -1,0 +1,12 @@
+@mixin parallax($imagem, $cor, $tamanho){
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url($imagem);
+    color: $cor;
+    padding-top: $tamanho;
+    padding-bottom: $tamanho;
+}
